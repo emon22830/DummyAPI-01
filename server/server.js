@@ -13,10 +13,10 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use("/users", usersRoute);
-app.use("/posts", postsRoute);
-app.use("/comments", commentsRoute);
-app.use("/todos", todosRoute);
+app.use("/api/users", usersRoute);
+app.use("/api/posts", postsRoute);
+app.use("/api/comments", commentsRoute);
+app.use("/api/todos", todosRoute);
 
 // Root health check
 app.get("/", (req, res) => {
